@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Hiren Prajapati | AI & Data Science Student | Developer Portfolio</title>
+  <meta name="title" content="Hiren Prajapati | AI & Data Science Student | Developer Portfolio">
+  <meta name="description" content="Portfolio of Hiren Prajapati, a B.Tech Artificial Intelligence & Data Science student at LJKU Ahmedabad, currently learning Python Full-Stack Development and building software projects.">
+  <meta name="keywords" content="Hiren Prajapati, Portfolio, LJKU, Ahmedabad, Python Full Stack, Artificial Intelligence, Data Science, Software Developer, B.Tech AI & DS">
+  <meta name="author" content="Hiren Prajapati">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/prajapatihiren904-svg">
+  <meta property="og:title" content="Hiren Prajapati | AI & Data Science Student | Developer Portfolio">
+  <meta property="og:description" content="B.Tech AI & Data Science student at LJKU Ahmedabad, currently learning Python Full-Stack Development and building software projects.">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Three.js CDN for 3D WebGL Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Cinematic Loading Screen Overlay -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-content">
+      <div class="loader-logo">HP</div>
+      <div class="loader-title">HIREN PRAJAPATI</div>
+      <div class="loader-subtitle">AI & DATA SCIENCE</div>
+      <div class="loader-progress-bar">
+        <div class="loader-progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor Rings (Desktop) -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- 3D WebGL Canvas Background -->
+  <canvas id="webgl-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">
+        <div class="brand-logo">HP</div>
+        <span class="brand-name">Hiren Prajapati<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#academics" class="nav-link">Academics</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#learning" class="nav-link">Learning</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#qrcode-section" class="nav-link">QR Code</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/prajapatihiren904-svg" target="_blank" rel="noopener noreferrer" class="btn-nav">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <div class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#academics" class="mobile-nav-link">Academics</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#learning" class="mobile-nav-link">Currently Learning</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#journey" class="mobile-nav-link">Journey</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="#qrcode-section" class="mobile-nav-link">QR Code</a>
+    </div>
+
+    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+      <a href="https://github.com/prajapatihiren904-svg" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%;">
+        GitHub Profile
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-badges" id="hero-badges"></div>
+            
+            <h1 class="hero-title" id="hero-title">HIREN <span class="gradient-text">PRAJAPATI</span></h1>
+            
+            <div class="hero-subtitle" id="hero-subtitle">B.Tech AI & Data Science Student</div>
+            
+            <p class="hero-tagline" id="hero-tagline">
+              Building my skills in Python, Full-Stack Development, AI & Data Science.
+            </p>
+
+            <div class="hero-ctas" id="hero-ctas"></div>
+          </div>
+
+          <!-- Hero Portrait Area -->
+          <div class="hero-portrait-wrapper">
+            <div class="orbit-ring"></div>
+            
+            <div class="portrait-card">
+              <div class="portrait-inner">
+                <img id="hero-portrait-img" class="portrait-img" alt="Hiren Prajapati Professional Developer Portrait" />
+                
+                <div class="portrait-badge">
+                  <div class="portrait-badge-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  </div>
+                  <div class="portrait-badge-text">
+                    <h4>LJKU Ahmedabad</h4>
+                    <p>B.Tech AI & DS · Semester 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container" id="about-container"></div>
+    </section>
+
+    <!-- ACADEMICS SECTION -->
+    <section id="academics" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Academic Excellence</span>
+          <h2 class="section-title">Academic <span class="gradient-cyan-blue">Performance & Metrics</span></h2>
+          <p class="section-subtitle">
+            Consistent academic record with distinction in Semester 1, completed Semester 2, and currently advancing in Semester 3.
+          </p>
+        </div>
+
+        <div class="metrics-grid" id="metrics-grid"></div>
+
+        <div class="timeline-wrapper" id="academic-timeline"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Technical Capability</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+          <p class="section-subtitle">
+            Categorized technical skills, tools, and learning focus based on real academic projects and continuous skill acquisition.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- CURRENTLY LEARNING SECTION -->
+    <section id="learning" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Learning Roadmap</span>
+          <h2 class="section-title">Currently <span class="gradient-cyan-blue">Learning</span></h2>
+          <p class="section-subtitle">
+            Active focus: <strong>Python Full-Stack Development</strong> — A structured learning path from backend fundamentals to full-stack web deployment.
+          </p>
+        </div>
+
+        <div class="roadmap-container" id="roadmap-container"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">
+            Practical software projects built using Java, Object-Oriented Design, IoT concepts, and Python.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- DEVELOPMENT JOURNEY SECTION -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Growth Timeline</span>
+          <h2 class="section-title">Development <span class="gradient-cyan-blue">Journey</span></h2>
+          <p class="section-subtitle">
+            Milestones and progression from Semester 1 foundations to future full-stack & AI software engineering.
+          </p>
+        </div>
+
+        <div class="journey-grid" id="journey-grid"></div>
+      </div>
+    </section>
+
+    <!-- STUDENT DEVELOPER STATUS BANNER -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 4rem;">
+      <div class="container" id="experience-container"></div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Get In Touch</span>
+          <h2 class="section-title">Connect With <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">
+            Open for technical discussions, academic collaborations, project feedback, and internship opportunities.
+          </p>
+        </div>
+
+        <div id="contact-container"></div>
+      </div>
+    </section>
+
+    <!-- QR CODE SECTION -->
+    <section id="qrcode-section" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">SCAN TO VISIT MY PORTFOLIO</span>
+          <h2 class="section-title">Scan To Open <span class="gradient-cyan-blue">Live Portfolio</span></h2>
+          <p class="section-subtitle">
+            Scan with any phone camera to view my full 3D interactive portfolio website.
+          </p>
+        </div>
+
+        <div id="qrcode-container"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container" id="footer-container"></div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
